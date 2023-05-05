@@ -47,16 +47,16 @@ const ExpenseList = ({ expenses, onDelete }) => {
                           key={item.id}
                           className="border-b dark:border-neutral-500"
                         >
-                          <td class="whitespace-nowrap px-6 py-4">
+                          <td class="whitespace-nowrap px-3 py-2">
                             {item.name}
                           </td>
-                          <td class="whitespace-nowrap px-6 py-4">
+                          <td class="whitespace-nowrap px-3 py-2">
                             {item.price}
                           </td>
-                          <td class="whitespace-nowrap px-6 py-4">
+                          <td class="whitespace-nowrap px-3 py-2">
                             {item.category}
                           </td>
-                          <td class="whitespace-nowrap px-6 py-4">
+                          <td class="whitespace-nowrap px-3 py-2">
                             <button
                               onClick={() => onDelete(item.id)}
                               class="text-x bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 p-3 text-white  rounded"
