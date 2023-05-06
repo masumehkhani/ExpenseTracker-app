@@ -1,7 +1,7 @@
 import React from "react";
 const Expensefilter = ({ onSelectCategory }) => {
   return (
-    <div className="m-3 lg:w-2/5 sm:w-fit">
+    <div className="m-3 lg:w-2/5">
       <label
         htmlFor="categories"
         className="block mb-2 text-sm font-medium text-gray-900 dark:text-white sm:inline-block sm:w-1/5 md:w-1/6 lg:w-1/8"
