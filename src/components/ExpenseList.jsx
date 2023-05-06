@@ -48,10 +48,10 @@ const ExpenseList = ({ expenses, onDelete }) => {
                           className="border-b dark:border-neutral-500"
                         >
                           <td class="whitespace-nowrap px-3 py-2">
-                            {item.name}
+                            {item.description}
                           </td>
                           <td class="whitespace-nowrap px-3 py-2">
-                            {item.price}
+                            {item.amount}
                           </td>
                           <td class="whitespace-nowrap px-3 py-2">
                             {item.category}
@@ -75,7 +75,7 @@ const ExpenseList = ({ expenses, onDelete }) => {
                     <td class="whitespace-nowrap px-6 py-4">
                       $
                       {expenses.reduce(
-                        (acc, expense) => acc + expense.price,
+                        (acc, expense) => acc + expense.amount,
                         0
                       )}
                     </td>
